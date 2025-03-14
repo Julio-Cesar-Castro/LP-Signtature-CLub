@@ -54,7 +54,7 @@
 
 html {
   font: var(--body-md);
-  color: var(--pink-dark);
+  color: var(--text-body);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -65,51 +65,6 @@ body {
 button, a {
   all: unset;
   text-decoration: none;
-}
-
-
-.btn {
-  width: 4.875rem;
-  height: 2.5rem;
-  padding: 0 1.25rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 0.5rem;
-  color: var(--text-title);
-  font-weight: bold;
-  cursor: pointer;
-  font: var(--button);
-  transition: background-color 200ms ease-in-out;
-}
-
-.btn-primary {
-  background-color: var(--pink-dark);
-
-  &:hover {
-    background-color: var(--pink-base);
-  }
-}
-
-.btn-secondary {
-  background-color: var(--blue-dark);
-
-  &:hover {
-    background-color: var(--blue-base);
-  }
-}
-
-.link {
-  font: var(--link);
-  color: var(--blue-light);
-  cursor: pointer;
-  transition: color 200ms ease-in-out;
-
-  &:hover {
-    color: var(--text-body);
-  }
 }
 
 figure {
@@ -130,3 +85,4 @@ figure {
     border-radius: 999px;
   }
 }
+
