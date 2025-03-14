@@ -1,8 +1,30 @@
+.flex {
+  display: flex;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-beetween{
+  justify-content: space-between;
+}
+
+.gap-12{
+  gap: 0.75rem
+}
 
 .btn {
-  width: 4.875rem;
+  width: 100%;
   height: 2.5rem;
-  padding: 0 1.25rem;
 
   display: flex;
   align-items: center;
@@ -41,4 +63,14 @@
   &:hover {
     color: var(--text-body);
   }
+}
+
+.card-method-primary{
+  color: var(--pink-light);
+  font: var(--title-xs)
+}
+
+.card-method-secondary{
+  color: var(--blue-light);
+  font: var(--title-xs);
 }

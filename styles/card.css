@@ -1,0 +1,86 @@
+
+.card-box{
+  width: 16.75rem;
+  height: 26rem;
+  border-radius: 1.5rem;
+
+  background-color: var(--shape-hover);
+  padding: 2rem 2rem 1.75rem 2rem;
+}
+
+.card-container {
+
+& .popular-box{
+  width: 5.625rem;
+  text-align: center;
+  padding: 0.5625rem 1.25rem;
+  font: var(--tag);
+  color: var(--text-body);
+  background-color: var(--shape-stroke);
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+& .pricing-card {
+  height: auto;
+  border: solid 1px red;
+}
+
+& .card-price{
+  font: var(--title-lg);
+  color: var(--text-title);
+
+  & span {
+    font: var(--title-xs);
+  }
+}
+
+& .card-price-annual{
+  font: var(--body-sm);
+  color: var(--text-label);
+}
+}
+
+.details {
+  width: 100%;
+
+  & ul[role="list"]{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    & li {
+      color: var(--text-xs);
+      font: var(--body-xs);
+      margin-left: 1.50rem;
+    }
+
+    & [data-primary]::before{
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 0.875rem;
+      height: 0.875rem;
+      background: url(/assets/icons/star-primary.svg) center no-repeat;
+      background-size: cover;
+    }
+
+    & li::before{
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 0.875rem;
+      height: 0.875rem;
+      background: url(/assets/icons/star-secondary.svg) center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  & > a {
+    margin-top: 0.75rem;
+    font: var(--button);
+  }
+  
+}
