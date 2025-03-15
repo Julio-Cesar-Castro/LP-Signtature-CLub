@@ -37,10 +37,10 @@
   /* Titles */
 
   /* Text */
-  --body-lg: 400 1.25rem/1.4 var(--ff-base) ;
-  --body-md: 400 1rem/1.4 var(--ff-base);
-  --body-sm: 400 0.875rem/1.4 var(--ff-base);
-  --body-xs: 400 0.75rem/1.4 var(--ff-base);
+  --body-lg: 500 1.25rem/1.4 var(--ff-base) ;
+  --body-md: 500 1rem/1.4 var(--ff-base);
+  --body-sm: 500 0.875rem/1.4 var(--ff-base);
+  --body-xs: 500 0.75rem/1.4 var(--ff-base);
   /* Text */
 
   /* Others */
@@ -50,6 +50,12 @@
   /* Others */
 
   /* End Font presets */
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
