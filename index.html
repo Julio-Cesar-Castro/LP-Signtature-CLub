@@ -10,27 +10,29 @@
   <title>Document</title>
 </head>
 <body>
-  <section id="hero">
-    <div class="hero-background"></div>
-    <div class="hero-container">
-      <header class="flex align-center justify-beetween">
-        <figure>
-          <img src="/assets/icons/logo-symbol.svg" alt="">
-        </figure>
-        <a href="" class="btn btn-primary">Assinar</a>
-      </header>
+  <div class="container">
+    <section id="hero">
+      <div class="hero-background"></div>
+      <div class="hero-container">
+        <header class="flex align-center justify-beetween">
+          <figure>
+            <img src="/assets/icons/logo-symbol.svg" alt="">
+            <img class="desktop-only" src="/assets/icons/logo-horizontal.svg" alt="">
+          </figure>
+          <a href="" class="btn btn-primary">Assinar</a>
+        </header>
+    
+        <article class="flex flex-col align-center justify-center gap-16">
+          <h1>Desperte a sua imaginação e explore novos mundos</h1>
+          <p>Junte-se ao clube de assinatura Encantos Literários e descubra maravilhas e aventuras a cada página </p>
+        </article>
   
-      <article class="flex flex-col align-center justify-center gap-16">
-        <h1>Desperte a sua imaginação e explore novos mundos</h1>
-        <p>Junte-se ao clube de assinatura Encantos Literários e descubra maravilhas e aventuras a cada página </p>
-      </article>
-
-      <article class="flex align-center justify-center">
-        <p>Receba todo mês um livro surpresa do seu tema favorito, acompanhado de brindes exclusivos que tornarão a sua experiência literária ainda mais encantadora.</p>
-        <div></div>
-      </article>
-    </div>
-
-  </section>
+        <article class="flex align-center justify-center">
+          <p>Receba todo mês um <span data-delay class="desktop-only appear">livro surpresa</span> do seu tema favorito, acompanhado de <span data-delay class="desktop-only appear">brindes exclusivos</span> que tornarão a sua experiência literária ainda mais <span data-delay class="desktop-only appear">encantadora</span></p>
+          <div></div>
+        </article>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
