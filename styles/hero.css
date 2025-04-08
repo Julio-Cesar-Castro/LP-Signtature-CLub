@@ -1,13 +1,13 @@
 #hero {
-  max-width: 23.4375rem;
+  max-width: 26.5625rem;
   width: 100%;
   margin: 0 auto;
-  height: 46.6875rem;
+  height: 70vh;
   position: relative;
 
   & .hero-background {
     width: 100%;
-    height: 29rem;
+    height: 464px;
     position: absolute;
     z-index: -1;
     background: url('/assets/images/hero-background.png');
@@ -18,94 +18,140 @@
   .hero-container {
     width: 100%;
     padding: 20px 20px;
-  
+
     & header {
 
       & img {
         width: 4rem;
         height: 3rem;
       }
-  
+
       & a {
         width: 5.5625rem;
         height: 2.5rem;
       }
     }
-  
-    & article:nth-child(2){
+
+    & article:nth-child(2) {
       margin-top: 3rem;
-  
+
       & h1 {
         color: var(--text-title);
         font: var(--title-sm);
         text-align: center;
       }
-  
+
       & p {
         font: var(--body-sm);
         color: var(--text-body);
         text-align: center;
       }
     }
+  }
+}
 
-    & article:nth-child(3){
-      width: 100%;
-      height: 15.6875rem;
-      margin-top: 225px;
-      position: relative;
+.animation-section {
+  max-width: 23.4375rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 15.0625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
-      & p {
-        font: var(--body-md);
-        color: var(--text-body);
-        text-align: center;
+  & article {
+    width: 20.9375rem;
 
-        &::after{
-          content: "";
-          width: 2.5rem;
-          height: 2.5rem;
-          top: 1.75rem;
-          right: 4.6875rem;
-          position: absolute;
-          background: url(/assets/images/mystery-opened-spellbook.png) no-repeat;
-          background-size: contain;
-          background-position: center;
-        }
 
-        &::before{
-          content: "";
-          width: 2.5rem;
-          height: 2.5rem;
-          right: 1.25rem;
-          bottom: 2rem;
-          position: absolute;
-          background: url(/assets/images/mystery-crystal-ball.png) no-repeat;
-          background-size: contain;
-          background-position: center;
-          transform: rotate(15deg);
-        }
+    & p {
+      font: var(--body-md);
+      color: var(--text-body);
+      text-align: center;
+
+      & blue {
+        display: inline;
+        color: var(--blue-light);
+        font-weight: bold;
       }
 
-      & div{
-        width: 2rem;
-        height: 2rem;
-        bottom: 3.125rem;
-        left: 0.875rem;
-        position: absolute;
-        background: url(/assets/images/mystery-ouija-planchette.png) no-repeat;
-        background-size: contain;
-        background-position: center;
-        transform: rotate(-30deg);
+      & span {
+        font-weight: 300;
+      }
+
+      & span:nth-child(1) {
+        animation: appearAll 500ms linear backwards;
+        animation-delay: 1s;
+      }
+
+      & span:nth-child(2) {
+        animation: appearAll 500ms linear backwards;
+        animation-delay: 1.8s;
+      }
+
+      & span:nth-child(3) {
+        animation: appearAll 500ms linear backwards;
+        animation-delay: 2.5s;
       }
     }
+  }
+
+  &::after {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 28px;
+    right: 74px;
+    position: absolute;
+    background: url(/assets/images/mystery-opened-spellbook.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(15deg);
+  }
+
+  &::before {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 21px;
+    bottom: 33px;
+    position: absolute;
+    background: url(/assets/images/mystery-crystal-ball.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(15deg);
+  }
+
+
+  & div {
+    width: 2rem;
+    height: 2rem;
+    bottom: 51px;
+    left: 14px;
+    position: absolute;
+    background: url(/assets/images/mystery-ouija-planchette.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(-30deg);
   }
 }
 
 
+@keyframes appearAll {
+  0% {
+    opacity: 0.1;
+  }
 
-@media ( width >= 80rem){
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (width >=45.5rem) {
   #hero {
     max-width: 120rem;
     width: 100%;
+    height: 100vh;
 
     & .hero-background {
       width: 100%;
@@ -122,10 +168,10 @@
           display: initial;
         }
 
-        & img[src*="logo-symbol"]{
+        & img[src*="logo-symbol"] {
           display: none;
         }
-        
+
         & img {
           width: 14.375rem;
           height: 3.625rem;
@@ -133,14 +179,14 @@
 
       }
 
-      & article:nth-child(2){
+      & article:nth-child(2) {
         margin-top: 10.25rem;
-    
+
         & h1 {
           font: var(--title-lg);
           width: 41rem;
         }
-    
+
         & p {
           margin-top: 2rem;
           font: var(--body-lg);
@@ -148,64 +194,46 @@
         }
       }
 
-      & article:nth-child(3){
-        margin-top: 556px;
-        height: 25rem;
-  
-        & p {
-          font: var(--subtitle);
-          text-align: center;
-          
-          & .desktop-only {
-            display: initial;
-          }
-
-          & span {
-            animation: appear 100ms forwards;
-            animation-timeline: view();
-            /* animation-range: 00px 300px; */
-
-            &[data-delay]:nth-child(){
-              animation-delay: 20ms;
-            };
-
-            &[data-delay]:nth-child(2){
-              animation-delay: 40ms;
-            };
-
-            &[data-delay]:nth-child(3){
-              animation-delay: 60ms;
-            }
-          }
-
-          &::after{
-            content: "";
-            width: 5.5rem;
-            height: 5.5rem;
-            top: 0.8375rem;
-            right: 35.125rem;
-            transform: rotate(20deg);
-          }
-  
-          &::before{
-            content: "";
-            width: 4.5rem;
-            height: 4.5rem;
-            right: 0.1125rem;
-            bottom: 4.75rem;
-            transform: rotate(15deg);
-          }
-        }
-
-        & div{
-          width: 5rem;
-          height: 5rem;
-          bottom: 4.5rem;
-          left: 2.125rem;
-          transform: rotate(99deg);
-        }
-
-      }
     }
   }
+
+  .animation-section {
+    max-width: 120rem;
+    height: 100vh;
+
+    & article {
+      width: 77rem;
+
+      & p {
+        font: var(--subtitle);
+        color: var(--text-body);
+      }
+    }
+
+    &::after {
+      width: 5.5rem;
+      height: 5.5rem;
+      top: 30%;
+      right: 50%;
+      transform: rotate(15deg);
+    }
+
+    &::before {
+      width: 5.5rem;
+      height: 5.5rem;
+      right: 15%;
+      bottom: 32%;
+      transform: rotate(-15deg);
+    }
+
+
+    & div {
+      width: 5rem;
+      height: 5rem;
+      bottom: 32%;
+      left: 18%;
+      transform: rotate(85deg);
+    }
+  }
+
 }

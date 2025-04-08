@@ -1,6 +1,6 @@
 :root {
-  
-   /* Variables Colors */
+
+  /* Variables Colors */
   --pink-light: #C59DD2;
   --pink-base: #9547A5;
   --pink-dark: #7D298A;
@@ -37,8 +37,8 @@
   /* Titles */
 
   /* Text */
-  --body-lg: 500 1.25rem/1.4 var(--ff-base) ;
-  --body-md: 500 1rem/1.4 var(--ff-base);
+  --body-lg: 500 1.25rem/1.4 var(--ff-base);
+  --body-md: 400 1rem/1.4 var(--ff-base);
   --body-sm: 500 0.875rem/1.4 var(--ff-base);
   --body-xs: 500 0.75rem/1.4 var(--ff-base);
   /* Text */
@@ -52,7 +52,9 @@
   /* End Font presets */
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -65,7 +67,7 @@ html {
 }
 
 body {
- background-color: var(--shape-background);
+  background-color: var(--shape-background);
 
   &::-webkit-scrollbar {
     width: 0.5rem;
@@ -84,12 +86,13 @@ body {
 
   }
 
-  &::-webkit-scrollbar-thumb:hover{
+  &::-webkit-scrollbar-thumb:hover {
     background: #144A72;
   }
 }
 
-button, a {
+button,
+a {
   all: unset;
   text-decoration: none;
 }
@@ -115,6 +118,6 @@ figure {
   }
 }
 
-.desktop-only{
+.desktop-only {
   display: none;
 }
