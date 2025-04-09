@@ -1,0 +1,135 @@
+#kit {
+  max-width: 26.25rem;
+  width: 100%;
+  height: 39.4375rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  & article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    &>div {
+      width: 19.4375rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    & img {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    & p {
+      font: var(--body-sm);
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+
+  &>div {
+    width: 100%;
+    position: relative;
+
+    & figure {
+      width: 100%;
+      height: 19.9375rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & p {
+        font-size: var(--ff-base);
+        font-size: 0.75rem;
+        font-weight: 300;
+      }
+
+      & #book {
+        width: 9.8125rem;
+        height: 12.9375rem;
+        position: absolute;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      & .purple-marked {
+        width: 3.625rem;
+        height: 11.25rem;
+        position: absolute;
+        right: 2.6875rem;
+        bottom: 3.875rem;
+        z-index: -2;
+        transform: rotate(22deg);
+      }
+
+      & .yellow-marked {
+        width: 3.625rem;
+        height: 11.25rem;
+        position: absolute;
+        z-index: -1;
+        right: 4.5625rem;
+        bottom: 6.5rem;
+        transform: rotate(11deg);
+      }
+
+      & .pin {
+        width: 4.6875rem;
+        height: 5.3125rem;
+        position: absolute;
+        left: 4.25rem;
+        bottom: 1.625rem;
+        z-index: -3;
+        transform: rotate(-8deg);
+      }
+
+      & .pin-line {
+        position: absolute;
+        width: 2.1875rem;
+        height: 2.6875rem;
+        left: 3.3125rem;
+        bottom: 5.9375rem;
+      }
+
+      & .pin-text {
+        position: absolute;
+        left: 1.5625rem;
+        bottom: 9.25rem;
+      }
+
+      & .book-line {
+        position: absolute;
+        top: 3rem;
+        left: 4.25rem;
+      }
+
+      & .book-text {
+        position: absolute;
+        top: 1.625rem;
+        left: 1.25rem;
+      }
+
+      & .mark-line {
+        position: absolute;
+        width: 3.0625rem;
+        height: 3.1875rem;
+        right: 3.75rem;
+        bottom: 1.5625rem;
+      }
+
+      & .mark-text {
+        position: absolute;
+        right: 2.5rem;
+        bottom: 0.4375rem;
+      }
+    }
+  }
+
+}
