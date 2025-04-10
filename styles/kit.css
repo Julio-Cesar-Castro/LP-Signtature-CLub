@@ -133,3 +133,160 @@
   }
 
 }
+
+@media (width >=45.5rem) {
+  #kit {
+    max-width: 120rem;
+    height: 99.125rem;
+
+    & article {
+      &>div {
+        width: auto;
+
+        & h2 {
+          font: var(--title-sm);
+        }
+      }
+
+      & img {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      & p {
+        font: var(--body-md);
+      }
+    }
+
+    &>div {
+      width: 100%;
+      position: relative;
+
+      & figure {
+        width: 100%;
+        height: 57.5rem;
+
+        & p {
+          font-weight: 500;
+        }
+
+        & #book {
+          width: 29.1875rem;
+          height: 38.5625rem;
+        }
+
+        & .purple-marked {
+          width: 11.25rem;
+          height: 33.5rem;
+          right: 16.4375rem;
+          bottom: 10rem;
+        }
+
+        & .yellow-marked {
+          width: 11.25rem;
+          height: 33.5rem;
+          right: 22.8125rem;
+          bottom: 18rem;
+          transform: rotate(12deg);
+        }
+
+        & .pin {
+          width: 13.875rem;
+          height: 15.875rem;
+          left: 345px;
+          position: absolute;
+          bottom: 70px;
+          transform: rotate(-8deg);
+        }
+
+        & .pin-line {
+          position: absolute;
+          width: 6.5625rem;
+          height: 7.9375rem;
+          left: 305px;
+          bottom: 270px;
+        }
+
+        & .pin-text {
+          position: absolute;
+          font: var(--body-md);
+          left: 295px;
+          bottom: 410px;
+        }
+
+        & .book-line {
+          width: 10.9375rem;
+          height: 1.875rem;
+          top: 8.125rem;
+          left: 22.1875rem;
+        }
+
+        & .book-text {
+          position: absolute;
+          font: var(--body-md);
+          top: 80px;
+          left: 290px;
+        }
+
+        & .mark-line {
+          position: absolute;
+          width: 9.0625rem;
+          height: 9.5rem;
+          right: 330px;
+          bottom: 40px;
+        }
+
+        & .mark-text {
+          font: var(--body-md);
+          right: 23.3125rem;
+          bottom: 0.4375rem;
+        }
+      }
+    }
+
+  }
+}
+
+@media (width >=120rem) {
+  #kit {
+    &>div {
+      & figure {
+        & .purple-marked {
+          right: 31.25rem;
+        }
+
+        & .yellow-marked {
+          right: 605px;
+        }
+
+        & .pin {
+          left: 36.5625rem;
+        }
+
+        & .pin-line {
+          left: 34.0625rem;
+        }
+
+        & .pin-text {
+          left: 33.125rem;
+        }
+
+        & .book-line {
+          left: 37.1875rem;
+        }
+
+        & .book-text {
+          left: 33.125rem;
+        }
+
+        & .mark-line {
+          right: 35.3125rem;
+        }
+
+        & .mark-text {
+          right: 38rem;
+        }
+      }
+    }
+  }
+}
