@@ -47,18 +47,18 @@
 }
 
 .btn-primary {
-  background-color: var(--pink-dark);
-
+  background-color: var(--blue-dark);
+  
   &:hover {
-    background-color: var(--pink-base);
+    background-color: var(--blue-base);
   }
 }
 
 .btn-secondary {
-  background-color: var(--blue-dark);
+  background-color: var(--pink-dark);
 
   &:hover {
-    background-color: var(--blue-base);
+    background-color: var(--pink-base);
   }
 }
 
@@ -74,13 +74,13 @@
 }
 
 .card-method-primary {
-  color: var(--pink-light);
-  font: var(--title-xs)
+  color: var(--blue-light);
+  font: var(--title-xs);
 }
 
 .card-method-secondary {
-  color: var(--blue-light);
-  font: var(--title-xs);
+  color: var(--pink-light);
+  font: var(--title-xs)
 }
 
 .position-center {
