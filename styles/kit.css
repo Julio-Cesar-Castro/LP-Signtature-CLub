@@ -171,58 +171,58 @@
           .purple-marked {
             top: 210px;
             left: 995px;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 900ms;
             transform: rotate(23deg);
           }
 
           .yellow-marked {
             top: 95px;
             left: 895px;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 900ms;
             transform: rotate(10deg);
           }
 
           .pin {
             top: 600px;
             left: 340px;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 900ms;
             transform: rotate(-6deg);
           }
 
           .pin-line {
             top: 590px;
             left: 350px;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 900ms;
           }
 
           .pin-text {
             top: 580px;
             left: 340px;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 900ms;
           }
 
           .book-line {
             top: 145px;
             left: 440px;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 900ms;
           }
 
           .book-text {
             top: 95px;
             left: 370px;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 900ms;
           }
 
           .mark-line {
             top: 790px;
             left: 1040px;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 900ms;
           }
 
           .mark-text {
             top: 890px;
             left: 1055px;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 900ms;
           }
         }
 
