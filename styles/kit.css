@@ -46,21 +46,6 @@
       align-items: center;
       justify-content: center;
 
-      & img[data-animation],
-      p[data-animation] {
-        animation: hideKit reverse forwards ease-in-out;
-      }
-
-      &:hover {
-
-        & img[data-animation],
-        p[data-animation] {
-          animation: hideKit;
-          animation-duration: 1s;
-          opacity: 1;
-        }
-      }
-
       & p {
         font-size: var(--ff-base);
         font-size: 0.75rem;
@@ -150,17 +135,6 @@
 
 }
 
-@keyframes hideKit {
-  from {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.1;
-  }
-
-}
-
-
 @media (width >=45.5rem) {
   #kit {
     max-width: 120rem;
@@ -193,6 +167,65 @@
         width: 100%;
         height: 57.5rem;
 
+        &:hover {
+          .purple-marked {
+            top: 210px;
+            left: 995px;
+            transition: ease-in-out 600ms;
+            transform: rotate(23deg);
+          }
+
+          .yellow-marked {
+            top: 95px;
+            left: 895px;
+            transition: ease-in-out 600ms;
+            transform: rotate(10deg);
+          }
+
+          .pin {
+            top: 600px;
+            left: 340px;
+            transition: ease-in-out 600ms;
+            transform: rotate(-6deg);
+          }
+
+          .pin-line {
+            top: 590px;
+            left: 350px;
+            transition: ease-in-out 600ms;
+          }
+
+          .pin-text {
+            top: 580px;
+            left: 340px;
+            transition: ease-in-out 600ms;
+          }
+
+          .book-line {
+            top: 145px;
+            left: 440px;
+            transition: ease-in-out 600ms;
+          }
+
+          .book-text {
+            top: 95px;
+            left: 370px;
+            transition: ease-in-out 600ms;
+          }
+
+          .mark-line {
+            top: 790px;
+            left: 1040px;
+            transition: ease-in-out 600ms;
+          }
+
+          .mark-text {
+            top: 890px;
+            left: 1055px;
+            transition: ease-in-out 600ms;
+          }
+        }
+
         & p {
           font-weight: 500;
         }
@@ -205,68 +238,76 @@
         & .purple-marked {
           width: 11.25rem;
           height: 33.5rem;
-          right: 16.4375rem;
-          bottom: 10rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
         & .yellow-marked {
           width: 11.25rem;
           height: 33.5rem;
-          right: 22.8125rem;
-          bottom: 18rem;
-          transform: rotate(12deg);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
         & .pin {
           width: 13.875rem;
           height: 15.875rem;
-          left: 345px;
           position: absolute;
-          bottom: 70px;
-          transform: rotate(-8deg);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
         & .pin-line {
           position: absolute;
           width: 6.5625rem;
           height: 7.9375rem;
-          left: 305px;
-          bottom: 270px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
         & .pin-text {
           position: absolute;
           font: var(--body-md);
-          left: 295px;
-          bottom: 410px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
         & .book-line {
           width: 10.9375rem;
           height: 1.875rem;
-          top: 8.125rem;
-          left: 22.1875rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
         & .book-text {
           position: absolute;
           font: var(--body-md);
-          top: 80px;
-          left: 290px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
         & .mark-line {
           position: absolute;
           width: 9.0625rem;
           height: 9.5rem;
-          right: 330px;
-          bottom: 40px;
+          top: 50%;
+          left: 55%;
+          transform: translate(-50%, -50%);
         }
 
         & .mark-text {
           font: var(--body-md);
-          right: 23.3125rem;
-          bottom: 0.4375rem;
+          top: 50%;
+          left: 60%;
+          transform: translate(-50%, -50%);
         }
       }
     }
@@ -278,40 +319,43 @@
   #kit {
     &>div {
       & figure {
-        & .purple-marked {
-          right: 31.25rem;
-        }
+        &:hover {
+          .purple-marked {
+            top: 210px;
+            left: 1235px;
+          }
 
-        & .yellow-marked {
-          right: 605px;
-        }
+          .yellow-marked {
+            left: 1135px;
+          }
 
-        & .pin {
-          left: 36.5625rem;
-        }
+          .pin {
+            left: 580px;
+          }
 
-        & .pin-line {
-          left: 34.0625rem;
-        }
+          .pin-line {
+            left: 595px;
+          }
 
-        & .pin-text {
-          left: 33.125rem;
-        }
+          .pin-text {
+            left: 590px;
+          }
 
-        & .book-line {
-          left: 37.1875rem;
-        }
+          .book-line {
+            left: 685px;
+          }
 
-        & .book-text {
-          left: 33.125rem;
-        }
+          .book-text {
+            left: 605px;
+          }
 
-        & .mark-line {
-          right: 35.3125rem;
-        }
+          .mark-line {
+            left: 1270px;
+          }
 
-        & .mark-text {
-          right: 38rem;
+          .mark-text {
+            left: 1375px;
+          }
         }
       }
     }
