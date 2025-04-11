@@ -27,10 +27,13 @@
     width: 17rem;
     height: 25rem;
     border-radius: 1.5rem;
-  
+
     background-color: var(--shape-base);
     border: 1px solid var(--shape-stroke);
     padding: 2rem 2rem 1.75rem 2rem;
+    transition: ease 200ms hover;
+
+
 
     & .card-header {
 
@@ -48,27 +51,27 @@
         font-weight: 600;
       }
 
-      &>.card-description{
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+      &>.card-description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
       }
-    
-    
+
+
       & .pricing-card {
         height: auto;
       }
-    
+
       & .card-price {
         font: var(--title-md);
         color: var(--text-title);
-    
+
         & span {
           font: var(--title-xs);
         }
       }
-    
+
       & .card-price-annual {
         margin-top: 0.5rem;
         font: var(--body-sm);
@@ -78,20 +81,20 @@
 
     & .details {
       width: 100%;
-    
+
       & ul[role="list"] {
         width: 100%;
         position: relative;
         display: flex;
         flex-direction: column;
         gap: 0.75rem;
-    
+
         & li {
           color: var(--text-xs);
           font: var(--body-xs);
           margin-left: 1.50rem;
         }
-    
+
         & [data-primary]::before {
           position: absolute;
           content: "";
@@ -101,7 +104,7 @@
           background: url(/assets/icons/star-primary.svg) center no-repeat;
           background-size: cover;
         }
-    
+
         & li::before {
           position: absolute;
           content: "";
@@ -112,11 +115,199 @@
           background-size: cover;
         }
       }
-    
+
       &>a {
         margin-top: 0.75rem;
         font: var(--button);
       }
     }
   }
+}
+
+@media (width >=45.5rem) {
+  #plans {
+    max-width: 120rem;
+    width: 100%;
+    height: 77.125rem;
+
+    &>h2 {
+      margin-bottom: 56px;
+      color: var(--text-sm);
+      color: var(--title-title);
+    }
+
+    & .container-card {
+      width: 65.625rem;
+      height: 37.875rem;
+      margin-left: 0;
+      padding-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+
+      & .card-box:nth-child(1) {
+        position: absolute;
+        left: 90px;
+        bottom: 45px;
+        rotate: -7deg;
+        z-index: 2;
+        transition:
+          background-color 300ms ease-in-out,
+          box-shadow 300ms ease-in-out,
+          z-index 300ms ease-in-out,
+          bottom 300ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--shape-hover);
+          box-shadow: 1px 1px 25px #001933;
+          z-index: 4;
+          bottom: 55px;
+        }
+      }
+
+
+      & .card-box:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        transition:
+          background-color 300ms ease-in-out,
+          box-shadow 300ms ease-in-out,
+          z-index 300ms ease-in-out,
+          top 300ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--shape-hover);
+          box-shadow: 1px 1px 25px #001933;
+          z-index: 4;
+          top: 49%;
+        }
+
+      }
+
+      & .card-box:nth-child(3) {
+        position: absolute;
+        right: 90px;
+        bottom: 45px;
+        rotate: 7deg;
+        z-index: 2;
+        transition:
+          background-color 300ms ease-in-out,
+          box-shadow 300ms ease-in-out,
+          z-index 300ms ease-in-out,
+          bottom 300ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--shape-hover);
+          box-shadow: 1px 1px 25px #001933;
+          z-index: 4;
+          bottom: 55px;
+        }
+
+      }
+
+      & .card-box {
+        width: 18rem;
+        height: 26rem;
+        border-radius: 1.5rem;
+
+        background-color: var(--shape-base);
+        border: 1px solid var(--shape-stroke);
+        padding: 2rem 2rem 1.75rem 2rem;
+
+        & .card-header {
+
+          & .popular-box {
+            width: 5.625rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5625rem 1.25rem;
+            font: var(--tag);
+            color: var(--text-body);
+            background-color: var(--shape-stroke);
+            border-radius: 999px;
+            text-transform: uppercase;
+            font-weight: 600;
+          }
+
+          &>.card-description {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          & .pricing-card {
+            height: auto;
+          }
+
+          & .card-price {
+            font: var(--title-md);
+            color: var(--text-title);
+
+            & span {
+              font: var(--title-xs);
+            }
+          }
+
+          & .card-price-annual {
+            margin-top: 0.5rem;
+            font: var(--body-sm);
+            color: var(--text-label);
+          }
+        }
+
+        & .details {
+          width: 100%;
+
+          & ul[role="list"] {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+
+            & li {
+              color: var(--text-xs);
+              font: var(--body-xs);
+              margin-left: 1.50rem;
+            }
+
+            & [data-primary]::before {
+              position: absolute;
+              content: "";
+              left: 0;
+              width: 0.875rem;
+              height: 0.875rem;
+              background: url(/assets/icons/star-primary.svg) center no-repeat;
+              background-size: cover;
+            }
+
+            & li::before {
+              position: absolute;
+              content: "";
+              left: 0;
+              width: 0.875rem;
+              height: 0.875rem;
+              background: url(/assets/icons/star-secondary.svg) center no-repeat;
+              background-size: cover;
+            }
+          }
+
+          &>a {
+            margin-top: 0.75rem;
+            font: var(--button);
+          }
+        }
+      }
+    }
+  }
+
 }
