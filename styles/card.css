@@ -1,6 +1,7 @@
 #plans {
   max-width: 26.5625rem;
   width: 100%;
+  margin: 0 auto;
   height: 44.5rem;
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@
     margin-left: 50%;
     padding-right: 30%;
     display: flex;
-    gap: 1rem
+    gap: 1rem;
   }
 
   & .card-box {
@@ -32,8 +33,6 @@
     border: 1px solid var(--shape-stroke);
     padding: 2rem 2rem 1.75rem 2rem;
     transition: ease 200ms hover;
-
-
 
     & .card-header {
 
@@ -92,7 +91,8 @@
         & li {
           color: var(--text-xs);
           font: var(--body-xs);
-          margin-left: 1.50rem;
+          font-size: 10px;
+          margin-left: 24px;
         }
 
         & [data-primary]::before {
@@ -216,51 +216,13 @@
       & .card-box {
         width: 18rem;
         height: 26rem;
-        border-radius: 1.5rem;
-
-        background-color: var(--shape-base);
-        border: 1px solid var(--shape-stroke);
-        padding: 2rem 2rem 1.75rem 2rem;
 
         & .card-header {
-
-          & .popular-box {
-            width: 5.625rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.5625rem 1.25rem;
-            font: var(--tag);
-            color: var(--text-body);
-            background-color: var(--shape-stroke);
-            border-radius: 999px;
-            text-transform: uppercase;
-            font-weight: 600;
-          }
 
           &>.card-description {
             display: flex;
             align-items: center;
             justify-content: space-between;
-          }
-
-          & .pricing-card {
-            height: auto;
-          }
-
-          & .card-price {
-            font: var(--title-md);
-            color: var(--text-title);
-
-            & span {
-              font: var(--title-xs);
-            }
-          }
-
-          & .card-price-annual {
-            margin-top: 0.5rem;
-            font: var(--body-sm);
-            color: var(--text-label);
           }
         }
 
@@ -268,46 +230,12 @@
           width: 100%;
 
           & ul[role="list"] {
-            width: 100%;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-
             & li {
-              color: var(--text-xs);
-              font: var(--body-xs);
-              margin-left: 1.50rem;
+              font-size: 12px;
             }
-
-            & [data-primary]::before {
-              position: absolute;
-              content: "";
-              left: 0;
-              width: 0.875rem;
-              height: 0.875rem;
-              background: url(/assets/icons/star-primary.svg) center no-repeat;
-              background-size: cover;
-            }
-
-            & li::before {
-              position: absolute;
-              content: "";
-              left: 0;
-              width: 0.875rem;
-              height: 0.875rem;
-              background: url(/assets/icons/star-secondary.svg) center no-repeat;
-              background-size: cover;
-            }
-          }
-
-          &>a {
-            margin-top: 0.75rem;
-            font: var(--button);
           }
         }
       }
     }
   }
-
 }
