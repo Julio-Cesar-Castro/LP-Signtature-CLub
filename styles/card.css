@@ -18,7 +18,7 @@
   & .container-card {
     max-width: 100%;
     overflow: auto;
-    margin-left: 50%;
+    margin-left: calc(100% - 55%);
     padding-right: 30%;
     display: flex;
     gap: 1rem;
