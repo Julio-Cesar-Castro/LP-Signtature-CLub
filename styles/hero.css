@@ -10,7 +10,7 @@
     height: 464px;
     position: absolute;
     z-index: -1;
-    background: url('assets/images/hero-background.png');
+    background: url('../assets/images/hero-background.png');
     background-position: center center;
     background-size: cover;
   }
