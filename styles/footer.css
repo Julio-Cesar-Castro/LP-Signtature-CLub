@@ -126,6 +126,117 @@ footer {
         & img {
           cursor: pointer;
         }
+
+        & figure {
+          & span[data-icon=discord] {
+            background: url(../assets/icons/discord.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 24px;
+            height: 24px;
+          }
+
+          & span[data-icon=instagram] {
+            background: url(../assets/icons/instagram.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 24px;
+            height: 24px;
+          }
+
+          & span[data-icon=twitter] {
+            background: url(../assets/icons/twitter.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 24px;
+            height: 24px;
+          }
+
+          & span[data-icon=facebook] {
+            background: url(../assets/icons/facebook.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 24px;
+            height: 24px;
+          }
+
+          & span[data-icon=whatssap] {
+            background: url(../assets/icons/whatsapp.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 24px;
+            height: 24px;
+          }
+
+          & span[data-icon=mail] {
+            background: url(../assets/icons/mail.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 24px;
+            height: 24px;
+          }
+
+          &:hover {
+            & span[data-icon=instagram] {
+              background: url(../assets/icons/instagram-hover.svg);
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          &:hover {
+            & span[data-icon=twitter] {
+              background: url(../assets/icons/twitter-hover.svg);
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+
+          &:hover {
+            & span[data-icon=discord] {
+              background: url(../assets/icons/discord-hover.svg);
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          &:hover {
+            & span[data-icon=whatssap] {
+              background: url(../assets/icons/whatsapp-hover.svg);
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          &:hover {
+            & span[data-icon=mail] {
+              background: url(../assets/icons/mail-hover.svg);
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          &:hover {
+            & span[data-icon=facebook] {
+              background: url(../assets/icons/facebook-hover.svg);
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
       }
     }
 
