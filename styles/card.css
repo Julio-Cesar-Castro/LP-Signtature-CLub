@@ -101,7 +101,7 @@
           left: 0;
           width: 0.875rem;
           height: 0.875rem;
-          background: url(/assets/icons/star-primary.svg) center no-repeat;
+          background: url(assets/icons/star-primary.svg) center no-repeat;
           background-size: cover;
         }
 
@@ -111,7 +111,7 @@
           left: 0;
           width: 0.875rem;
           height: 0.875rem;
-          background: url(/assets/icons/star-secondary.svg) center no-repeat;
+          background: url(assets/icons/star-secondary.svg) center no-repeat;
           background-size: cover;
         }
       }

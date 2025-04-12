@@ -9,7 +9,7 @@ footer {
   flex-direction: column;
   gap: 2.5rem;
 
-  background: url(../assets/images/footer-background.svg);
+  background: url(assets/images/footer-background.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -110,7 +110,7 @@ footer {
     justify-content: space-around;
     flex-direction: row;
 
-    background: url(../assets/images/book-trace-background.png);
+    background: url(assets/images/book-trace-background.png);
     background-size: cover;
 
 
@@ -129,7 +129,7 @@ footer {
 
         & figure {
           & span[data-icon=discord] {
-            background: url(../assets/icons/discord.svg);
+            background: url(assets/icons/discord.svg);
             background-repeat: no-repeat;
             background-position: center center;
             width: 24px;
@@ -137,7 +137,7 @@ footer {
           }
 
           & span[data-icon=instagram] {
-            background: url(../assets/icons/instagram.svg);
+            background: url(assets/icons/instagram.svg);
             background-repeat: no-repeat;
             background-position: center center;
             width: 24px;
@@ -145,7 +145,7 @@ footer {
           }
 
           & span[data-icon=twitter] {
-            background: url(../assets/icons/twitter.svg);
+            background: url(assets/icons/twitter.svg);
             background-repeat: no-repeat;
             background-position: center center;
             width: 24px;
@@ -153,7 +153,7 @@ footer {
           }
 
           & span[data-icon=facebook] {
-            background: url(../assets/icons/facebook.svg);
+            background: url(assets/icons/facebook.svg);
             background-repeat: no-repeat;
             background-position: center center;
             width: 24px;
@@ -161,7 +161,7 @@ footer {
           }
 
           & span[data-icon=whatssap] {
-            background: url(../assets/icons/whatsapp.svg);
+            background: url(assets/icons/whatsapp.svg);
             background-repeat: no-repeat;
             background-position: center center;
             width: 24px;
@@ -169,7 +169,7 @@ footer {
           }
 
           & span[data-icon=mail] {
-            background: url(../assets/icons/mail.svg);
+            background: url(assets/icons/mail.svg);
             background-repeat: no-repeat;
             background-position: center center;
             width: 24px;
@@ -178,7 +178,7 @@ footer {
 
           &:hover {
             & span[data-icon=instagram] {
-              background: url(../assets/icons/instagram-hover.svg);
+              background: url(assets/icons/instagram-hover.svg);
               background-repeat: no-repeat;
               background-position: center center;
               width: 24px;
@@ -188,7 +188,7 @@ footer {
 
           &:hover {
             & span[data-icon=twitter] {
-              background: url(../assets/icons/twitter-hover.svg);
+              background: url(assets/icons/twitter-hover.svg);
               background-repeat: no-repeat;
               background-position: center center;
               width: 24px;
@@ -199,7 +199,7 @@ footer {
 
           &:hover {
             & span[data-icon=discord] {
-              background: url(../assets/icons/discord-hover.svg);
+              background: url(assets/icons/discord-hover.svg);
               background-repeat: no-repeat;
               background-position: center center;
               width: 24px;
@@ -209,7 +209,7 @@ footer {
 
           &:hover {
             & span[data-icon=whatssap] {
-              background: url(../assets/icons/whatsapp-hover.svg);
+              background: url(assets/icons/whatsapp-hover.svg);
               background-repeat: no-repeat;
               background-position: center center;
               width: 24px;
@@ -219,7 +219,7 @@ footer {
 
           &:hover {
             & span[data-icon=mail] {
-              background: url(../assets/icons/mail-hover.svg);
+              background: url(assets/icons/mail-hover.svg);
               background-repeat: no-repeat;
               background-position: center center;
               width: 24px;
@@ -229,7 +229,7 @@ footer {
 
           &:hover {
             & span[data-icon=facebook] {
-              background: url(../assets/icons/facebook-hover.svg);
+              background: url(assets/icons/facebook-hover.svg);
               background-repeat: no-repeat;
               background-position: center center;
               width: 24px;

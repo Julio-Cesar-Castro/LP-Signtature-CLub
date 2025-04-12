@@ -10,7 +10,7 @@
     height: 464px;
     position: absolute;
     z-index: -1;
-    background: url('/assets/images/hero-background.png');
+    background: url('assets/images/hero-background.png');
     background-position: center center;
     background-size: cover;
   }
@@ -103,7 +103,7 @@
     top: 28px;
     right: 74px;
     position: absolute;
-    background: url(/assets/images/mystery-opened-spellbook.png) no-repeat;
+    background: url(assets/images/mystery-opened-spellbook.png) no-repeat;
     background-size: contain;
     background-position: center;
     transform: rotate(15deg);
@@ -116,7 +116,7 @@
     right: 21px;
     bottom: 33px;
     position: absolute;
-    background: url(/assets/images/mystery-crystal-ball.png) no-repeat;
+    background: url(assets/images/mystery-crystal-ball.png) no-repeat;
     background-size: contain;
     background-position: center;
     transform: rotate(15deg);
@@ -129,7 +129,7 @@
     bottom: 51px;
     left: 14px;
     position: absolute;
-    background: url(/assets/images/mystery-ouija-planchette.png) no-repeat;
+    background: url(assets/images/mystery-ouija-planchette.png) no-repeat;
     background-size: contain;
     background-position: center;
     transform: rotate(-30deg);
